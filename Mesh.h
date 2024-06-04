@@ -12,8 +12,4 @@ struct MyTraits : public OpenMesh::DefaultTraits
 	typedef Eigen::Vector2d TexCoord2D;
 };
 
-// typedef public OpenMesh::TriMesh_ArrayKernelT<MyTraits> Mesh;
-
-class Mesh : public OpenMesh::TriMesh_ArrayKernelT<MyTraits>
-{
-};
+typedef public OpenMesh::TriMesh_ArrayKernelT<MyTraits> Mesh;
