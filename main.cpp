@@ -12,7 +12,7 @@ int main()
 {
 	// Load mesh from file
 	Mesh input_mesh;
-	if (!OpenMesh::IO::read_mesh(input_mesh, "data/models/camelhead.obj"))
+	if (!OpenMesh::IO::read_mesh(input_mesh, "data/models/catbody.obj"))
 	{
 		std::cerr << "Error loading mesh from file input.obj" << std::endl;
 		exit(EXIT_FAILURE);

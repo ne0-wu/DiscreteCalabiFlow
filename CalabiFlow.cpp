@@ -76,7 +76,9 @@ void CalabiFlow::flow(int num_iterations)
 
 		std::cout << "Iteration: " << iter
 				  << " \t Energy: " << pow((K - K_target).norm(), 2)
-				  << " \t Max Error: " << (K - K_target).cwiseAbs().maxCoeff() << std::endl;
+				  << " \t Max Error: " << (K - K_target).cwiseAbs().maxCoeff()
+				  << " \t Relative Energy Change: " << abs(energy_prev - energy) / energy
+				  << std::endl;
 
 		if (abs(energy_prev - energy) / energy < 1e-3)
 		{
