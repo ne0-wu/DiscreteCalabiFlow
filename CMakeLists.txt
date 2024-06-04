@@ -14,6 +14,8 @@ add_executable(DiscreteCalabiFlow
 	Mesh.h
 	CalabiFlow.h
 	CalabiFlow.cpp
+	stb_image_write.h
+	DrawMesh.h
 )
 
 target_link_libraries(DiscreteCalabiFlow OpenMeshCore OpenMeshTools)

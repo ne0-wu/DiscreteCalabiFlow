@@ -7,3 +7,7 @@ This project is a basic C++ implementation of the discrete Calabi flow algorithm
 This project uses `vcpkg` to manage its dependencies. The following libraries are required:
 - `Eigen` (3.4.0)
 - `OpenMesh` (10.0)
+
+## How to use
+
+`main.cpp` contains an example of how to use the algorithm. The main function reads a triangle mesh from a file, computes the disk embedding using the discrete Calabi flow algorithm, writes the result to a new obj file `output.obj` and visualizes the result by writing a `output.png` file.
