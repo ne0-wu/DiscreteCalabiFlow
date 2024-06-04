@@ -14,9 +14,9 @@ add_executable(DiscreteCalabiFlow
 	Mesh.h
 	CalabiFlow.h
 	CalabiFlow.cpp
-	)
+)
 
-	target_link_libraries(DiscreteCalabiFlow OpenMeshCore OpenMeshTools)
+target_link_libraries(DiscreteCalabiFlow OpenMeshCore OpenMeshTools)
 
 add_custom_command(TARGET DiscreteCalabiFlow POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_directory
